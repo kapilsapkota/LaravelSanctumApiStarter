@@ -35,7 +35,6 @@ class CategoryController extends Controller
             'file' => 'nullable|max:2048|file',
             'description' => 'nullable',
         ]);
-
         if($request->hasFile('file')){
             //check folder
             if (!file_exists(public_path('category')))
